@@ -1,3 +1,20 @@
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+input,
+textarea,
+select,
+button {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: norse;
     src: url(font/Norse-Bold.otf);
@@ -32,7 +49,6 @@ body {
     flex-grow: 1;
     position: absolute;
     top: 30%;
-    /* width: 100%; */
     font-size: 120px;
     text-align: center;
     display: flex;
@@ -93,15 +109,39 @@ p {
     width: clamp(45ch, 50%, 75ch);
     padding-left: 35px;
     font-weight: 600;
+    /* margin: 0; */
 }
-
-/*
-.bottom {
-    flex: 1 1 30%
-} */
 
 .form {
     background-color: #fffefe;
     box-shadow: 0px 5px 9px 0px #779AA5;
-    /* flex-basis: 30%; */
+}
+
+form {
+    padding: 0 0 15px 35px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form>div {
+    flex-shrink: 0;
+    margin: 1rem 3.5rem 1rem 0;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(77, 79, 81, 255);
+}
+
+input {
+    width: 350px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 0.7em;
+    border: solid 2px rgba(215, 199, 196, 255);
 }
