@@ -58,6 +58,7 @@ body {
     width: 100%;
     box-sizing: border-box;
     background-color: rgb(0, 0, 0, 0.5);
+    overflow: hidden;
 }
 
 .logo-banner>* {
