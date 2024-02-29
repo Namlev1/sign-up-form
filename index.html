@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
     <title>Sign-up form</title>
 </head>
 
@@ -29,36 +30,37 @@
         </div>
         <div class="form">
             <p>Let's do this!</p>
-            <form method="post" action="#">
+            <form method="post" action="" onsubmit="return validatePasswords()">
                 <div>
                     <label for="first-name">First name</label>
-                    <input type="text" name="first-name" id="first-name">
+                    <input type="text" name="first-name" id="first-name" minlength="3" required>
                 </div>
                 <div>
                     <label for="last-name">Last name</label>
-                    <input type="text" name="last-name" id="last-name">
+                    <input type="text" name="last-name" id="last-name" minlength="3" required>
                 </div>
                 <div>
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
                 </div>
                 <div>
                     <label for="phone">Phone number</label>
-                    <input type="tel" name="phone" id="phone">
+                    <input type="tel" name="phone" id="phone" minlength="9" required>
                 </div>
                 <div>
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" minlength="8" required>
+                    <div></div>
                 </div>
                 <div>
                     <label for="conf-password">Confirm password</label>
-                    <input type="password" name="conf-password" id="phone">
+                    <input type="password" name="conf-password" id="conf-password" minlength="8" required>
                 </div>
             </form>
         </div>
-        <div class="bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga magnam non veritatis mollitia
-            aliquid, sint eos et voluptatem quos magni enim iste harum nulla quibusdam inventore fugiat! Deleniti,
-            veritatis eveniet!</div>
+        <div class="bottom">
+            <button type="submit">aa</button>
+        </div>
     </div>
 
 </body>

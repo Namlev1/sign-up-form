@@ -144,5 +144,17 @@ input {
     padding: 5px;
     margin-top: 5px;
     font-size: 0.7em;
+    outline: none;
     border: solid 2px rgba(215, 199, 196, 255);
+}
+
+input:focus {
+    border: solid 2px blue;
+    box-shadow: 3px 3px 10px -2px #9FABCC;
+}
+
+input+div {
+    position: absolute;
+    font-size: 0.7em;
+    color: red;
 }
