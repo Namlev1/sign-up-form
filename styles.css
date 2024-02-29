@@ -93,6 +93,7 @@ footer {
 
 #right>* {
     flex: 1 1 33%;
+    padding-left: 35px;
 }
 
 .description,
@@ -108,9 +109,7 @@ footer {
 
 p {
     width: clamp(45ch, 50%, 75ch);
-    padding-left: 35px;
     font-weight: 600;
-    /* margin: 0; */
 }
 
 .form {
@@ -119,7 +118,7 @@ p {
 }
 
 form {
-    padding: 0 0 15px 35px;
+    padding: 0 0 15px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -157,4 +156,29 @@ input+div {
     position: absolute;
     font-size: 0.7em;
     color: red;
+}
+
+.bottom {
+    padding-top: 40px;
+}
+
+button {
+    background-color: #586d49;
+    color: #f8fafa;
+    width: 300px;
+    border-radius: 9px;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 3px 3px 17px -1px #B2A7A8;
+    margin-bottom: 40px;
+}
+
+.bottom>p {
+    font-weight: 500;
+}
+
+a {
+    font-weight: 600;
+    color: #586d49;
 }
